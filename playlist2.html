@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>THALA's Studio</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="shortcut icon" type="image/png" href="src/favicon.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<header>
+			<div class="nav-col left-col">
+				<a href="index.html"><div class="header-logo-div"><i class="fa fa-headphones" id="header-logo" aria-hidden="true"></i></div></a>
+				<a href="index.html"><div class="header-title">
+					<p>THALA's</p>
+					<p><b>Studio</b></p>
+				</div></a>
+				<ul><li><a href="#">Favourites</a></li></ul>
+			</div>
+			<div class="nav-col right-col">
+				<div class="search-box">
+					<i class="fa fa-search" aria-hidden="true"></i>
+					<input type="text" placeholder="Search" >
+					<a href="#"><i class="fa fa-microphone" aria-hidden="true"></i></a>
+				</div>
+				<a href="#"><i id="notif" class="fa fa-bell-o" aria-hidden="true"></i></a>
+				<img class="user-img" src="src/user.jpeg">
+			</div>
+		</header>
+
+    <!-- MAIN BODY -->
+    <div class="container container-flex">
+        <main>
+            <audio id="audio-player" src="" preload="auto"></audio>
+            <div class="featured-playlist flex-space">
+                <div class="featured-playlist-image">
+                    <img src="src/anirudh.jpg" alt="Anirudh Ravichander">
+                </div>
+                <div class="featured-playlist-details">
+                    <div class="featured-playlist-info">
+                        <div class="flex-space featured-playlist-info-top">
+                            <div class="featured-playlist-info-name">
+                                <h2>Anirudh Ravichander</h2>
+                                <p>Indian Composer</p>
+                            </div>
+                            <div class="followers">
+                                <p>22.8k followers</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-playlist-writeup">
+                        <p>
+                            Anirudh Ravichander (born 16 October 1990), also credited mononymously as Anirudh, is an Indian composer and playback singer who works primarily in Tamil cinema, in addition to Hindi and Telugu films.
+                        </p><br>
+						<a href="">Follow</a>
+                    </div>
+                    <div class="featured-playlist-buttons">
+                        <div class="play-all-button">
+                            <button id="play-all">Play All</button>
+                            <p>250 tracks | 130 followers</p>
+                        </div>
+						<div class="player-controls">
+                            <button id="prev-track"><i class="fa fa-step-backward" aria-hidden="true"></i></button>
+                            <button id="play-pause"><i class="fa fa-play" aria-hidden="true"></i></button>
+							<button id="next-track"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
+                            <input type="range" id="volume-control" min="0" max="15" step="0.1" value="0.5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="playlist-next-item flex-space">
+                <div class="playlist-next-item-entry flex-space">
+                    <div class="playlist-next-item-entry-info flex-space">
+                        <p class="playlist-next-item-entry-number">01</p>
+                        <div class="playlist-next-item-entry-info-image">
+                            <img src="src/note.jpeg" alt="Song Cover">
+                        </div>
+                        <div class="playlist-next-item-entry-info-name">
+                            <p><b>Manasilaayo</b></p>
+                            <p class="playlist-next-item-entry-info-name-sub">Anirudh Ravichander</p>
+                        </div>
+                    </div>
+                    <div class="playlist-next-item-entry-icons flex-space">
+                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                        <button class="play-button" data-audio="src/Manasilaayo.mp3"><i class="fa fa-play" aria-hidden="true"></i></button>
+                        <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="playlist-next-item-entry flex-space">
+                    <div class="playlist-next-item-entry-info flex-space">
+                        <p class="playlist-next-item-entry-number">02</p>
+                        <div class="playlist-next-item-entry-info-image">
+                            <img src="src/note3.png" alt="Song Cover">
+                        </div>
+                        <div class="playlist-next-item-entry-info-name">
+                            <p><b>Gaali Vaaluga</b></p>
+                            <p class="playlist-next-item-entry-info-name-sub">Anirudh Ravichander</p>
+                        </div>
+                    </div>
+                    <div class=" playlist-next-item-entry-icons flex-space">
+                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                        <button class="play-button" data-audio="src/Gaali Vaaluga.mp3"><i class="fa fa-play" aria-hidden="true"></i></button>
+                        <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+				<div class="playlist-next-item-entry flex-space">
+					<div class="playlist-next-item-entry-info flex-space">
+						<p class="playlist-next-item-entry-number">03</p>
+						<div class="playlist-next-item-entry-info-image"><img src="src/note4.png"></div>
+						<div class="playlist-next-item-entry-info-name">
+							<p><b>Baitikochi Chuste</b></p>
+							<p class="playlist-next-item-entry-info-name-sub">Anirudh Ravichander</p>
+						</div>
+					</div>
+					<div class=" playlist-next-item-entry-icons flex-space">
+                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                        <button class="play-button" data-audio="src/Baitikochi Chuste.mp3"><i class="fa fa-play" aria-hidden="true"></i></button>
+                        <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                    </div>
+            	</div>
+				<div class="playlist-next-item-entry flex-space">
+                    <div class="playlist-next-item-entry-info flex-space">
+                        <p class="playlist-next-item-entry-number">04</p>
+                        <div class="playlist-next-item-entry-info-image">
+                            <img src="src/note.jpeg" alt="Song Cover">
+                        </div>
+                        <div class="playlist-next-item-entry-info-name">
+                            <p><b>Fear</b></p>
+                            <p class="playlist-next-item-entry-info-name-sub">Anirudh Ravichander</p>
+                        </div>
+                    </div>
+                    <div class="playlist-next-item-entry-icons flex-space">
+                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                        <button class="play-button" data-audio="src/Fear.mp3"><i class="fa fa-play" aria-hidden="true"></i></button>
+                        <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="playlist-next-item-entry flex-space">
+                    <div class="playlist-next-item-entry-info flex-space">
+                        <p class="playlist-next-item-entry-number">05</p>
+                        <div class="playlist-next-item-entry-info-image">
+                            <img src="src/note2.jpeg" alt="Song Cover">
+                        </div>
+                        <div class="playlist-next-item-entry-info-name">
+                            <p><b>pataas pilla</b></p>
+                            <p class="playlist-next-item-entry-info-name-sub">Anirudh Ravichander</p>
+                        </div>
+                    </div>
+                    <div class=" playlist-next-item-entry-icons flex-space">
+                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                        <button class="play-button" data-audio="src/Pataas Pilla.mp3"><i class="fa fa-play" aria-hidden="true"></i></button>
+                        <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+				<div class="playlist-next-item-entry flex-space">
+					<div class="playlist-next-item-entry-info flex-space">
+						<p class="playlist-next-item-entry-number">06</p>
+						<div class="playlist-next-item-entry-info-image"><img src="src/note4.png"></div>
+						<div class="playlist-next-item-entry-info-name">
+							<p><b>Massu Maranam</b></p>
+							<p class="playlist-next-item-entry-info-name-sub">Anirudh Ravichander</p>
+						</div>
+					</div>
+					<div class=" playlist-next-item-entry-icons flex-space">
+                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                        <button class="play-button" data-audio="src/Massu Maranam.mp3"><i class="fa fa-play" aria-hidden="true"></i></button>
+                        <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                    </div>
+            	</div>
+				<div class="playlist-next-item-entry flex-space">
+                    <div class="playlist-next-item-entry-info flex-space">
+                        <p class="playlist-next-item-entry-number">07</p>
+                        <div class="playlist-next-item-entry-info-image">
+                            <img src="src/note3.png" alt="Song Cover">
+                        </div>
+                        <div class="playlist-next-item-entry-info-name">
+                            <p><b>Adhento Gaani</b></p>
+                            <p class="playlist-next-item-entry-info-name-sub">Anirudh Ravichander</p>
+                        </div>
+                    </div>
+                    <div class="playlist-next-item-entry-icons flex-space">
+                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                        <button class="play-button" data-audio="src/Adhento Gaani.mp3"><i class="fa fa-play" aria-hidden="true"></i></button>
+                        <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="playlist-next-item-entry flex-space">
+                    <div class="playlist-next-item-entry-info flex-space">
+                        <p class="playlist-next-item-entry-number">08</p>
+                        <div class="playlist-next-item-entry-info-image">
+                            <img src="src/note3.png" alt="Song Cover">
+                        </div>
+                        <div class="playlist-next-item-entry-info-name">
+                            <p><b>Kollagotte</b></p>
+                            <p class="playlist-next-item-entry-info-name-sub">Anirudh Ravichander</p>
+                        </div>
+                    </div>
+                    <div class=" playlist-next-item-entry-icons flex-space">
+                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                        <button class="play-button" data-audio="src/Kollagotte.mp3"><i class="fa fa-play" aria-hidden="true"></i></button>
+                        <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+				<div class="playlist-next-item-entry flex-space">
+                    <div class="playlist-next-item-entry-info flex-space">
+                        <p class="playlist-next-item-entry-number">09</p>
+                        <div class="playlist-next-item-entry-info-image">
+                            <img src="src/note2.jpeg" alt="Song Cover">
+                        </div>
+                        <div class="playlist-next-item-entry-info-name">
+                            <p><b>Cheliya Cheliya</b></p>
+                            <p class="playlist-next-item-entry-info-name-sub">Anirudh Ravichander</p>
+                        </div>
+                    </div>
+                    <div class=" playlist-next-item-entry-icons flex-space">
+                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                        <button class="play-button" data-audio="src/Cheliya.mp3"><i class="fa fa-play" aria-hidden="true"></i></button>
+                        <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+				<div class="playlist-next-item-entry flex-space">
+                    <div class="playlist-next-item-entry-info flex-space">
+                        <p class="playlist-next-item-entry-number">10</p>
+                        <div class="playlist-next-item-entry-info-image">
+                            <img src="src/note2.jpeg" alt="Song Cover">
+                        </div>
+                        <div class="playlist-next-item-entry-info-name">
+                            <p><b>Dippam Dappam</b></p>
+                            <p class="playlist-next-item-entry-info-name-sub">Anirudh Ravichander</p>
+                        </div>
+                    </div>
+                    <div class=" playlist-next-item-entry-icons flex-space">
+                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                        <button class="play-button" data-audio="src/Dippam Dappam.mp3"><i class="fa fa-play" aria-hidden="true"></i></button>
+                        <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+				<div class="playlist-next-item-entry flex-space">
+                    <div class="playlist-next-item-entry-info flex-space">
+                        <p class="playlist-next-item-entry-number">11</p>
+                        <div class="playlist-next-item-entry-info-image">
+                            <img src="src/note5.jpg" alt="Song Cover">
+                        </div>
+                        <div class="playlist-next-item-entry-info-name">
+                            <p><b>Bae</b></p>
+                            <p class="playlist-next-item-entry-info-name-sub">Anirudh Ravichander</p>
+                        </div>
+                    </div>
+                    <div class=" playlist-next-item-entry-icons flex-space">
+                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                        <button class="play-button" data-audio="src/Bae.m4a"><i class="fa fa-play" aria-hidden="true"></i></button>
+                        <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+			</div>
+        </main>
+    </div>
+
+    <script>
+        const audioPlayer = document.getElementById('audio-player');
+		const playButtons = document.querySelectorAll('.play-button');
+		const searchInput = document.getElementById('search-input');
+		const playPauseButton = document.getElementById('play-pause');
+		const volumeControl = document.getElementById('volume-control');
+		const prevTrackButton = document.getElementById('prev-track');
+		const nextTrackButton = document.getElementById('next-track');
+		const audioSources = [
+			'src/Manasilaayo.mp3',
+			'src/Gaali Vaaluga.mp3',
+			'src/Baitikochi Chuste.mp3',
+			'src/Fear.mp3',
+			'src/Pataas Pilla.mp3',
+			'src/Massu Maranam.mp3',
+			'src/Adhento Gaani.mp3',
+			'src/Kollagotte.mp3',
+			'src/Cheliya.mp3',
+			'src/Dippam Dappam.mp3',
+			'src/Bae.m4a',
+		];
+		let currentTrackIndex = 0;
+
+		// Function to play a specific track by index
+		function playTrack(index) {
+			audioPlayer.src = audioSources[index];
+			audioPlayer.play();
+			updatePlayButton(index);
+		}
+
+		// Update play button icon based on the current track
+		function updatePlayButton(index) {
+			playButtons.forEach((button, i) => {
+				button.innerHTML = i === index && !audioPlayer.paused
+					? '<i class="fa fa-pause" aria-hidden="true"></i>'
+					: '<i class="fa fa-play" aria-hidden="true"></i>';
+			});
+		}
+		function updatePlayPauseIcon() {
+            playPauseButton.innerHTML = audioPlayer.paused
+                ? '<i class="fa fa-play" aria-hidden="true"></i>'
+                : '<i class="fa fa-pause" aria-hidden="true"></i>';
+        }
+		playPauseButton.addEventListener('click', () => {
+				if (audioPlayer.paused) {
+					audioPlayer.play();
+				} else {
+					audioPlayer.pause();
+				}
+				updatePlayPauseIcon();
+			});
+
+		// Add click events to individual play buttons
+		playButtons.forEach((button, index) => {
+			button.addEventListener('click', () => {
+				if (audioPlayer.src.endsWith(audioSources[index])) {
+					if (audioPlayer.paused) {
+						audioPlayer.play();
+					} else {
+						audioPlayer.pause();
+					}
+				} else {
+					playTrack(index);
+				}
+				updatePlayButton(index);
+			});
+		});
+
+		// Next Track Control
+		nextTrackButton.addEventListener('click', () => {
+			currentTrackIndex = (currentTrackIndex + 1) % audioSources.length;
+			playTrack(currentTrackIndex);
+		});
+
+		// Previous Track Control
+		prevTrackButton.addEventListener('click', () => {
+			currentTrackIndex = (currentTrackIndex - 1 + audioSources.length) % audioSources.length;
+			playTrack(currentTrackIndex);
+		});
+
+		// Volume Control
+		volumeControl.addEventListener('input', () => {
+			audioPlayer.volume = volumeControl.value;
+		});
+
+		// "Play All" button event
+		document.getElementById('play-all').addEventListener('click', () => {
+			currentTrackIndex = 0;
+			playTrack(currentTrackIndex);
+
+			audioPlayer.onended = () => {
+				currentTrackIndex++;
+				if (currentTrackIndex < audioSources.length) {
+					playTrack(currentTrackIndex);
+				} else {
+					currentTrackIndex = 0; // Reset index if all tracks are done
+					updatePlayButton(-1); // Reset button icons
+				}
+			};
+		});
+
+		// Search functionality
+		searchInput.addEventListener('input', () => {
+			const query = searchInput.value.toLowerCase();
+			const songEntries = document.querySelectorAll('.playlist-next-item-entry');
+
+			songEntries.forEach(entry => {
+				const songName = entry.querySelector('.playlist-next-item-entry-info-name b').innerText.toLowerCase();
+				entry.style.display = songName.includes(query) ? 'flex' : 'none';
+			});
+		});
+
+    </script>
+</body>
+</html>

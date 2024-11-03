@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>THALA's Studio</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="shortcut icon" type="image/png" href="src/favicon.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<header>
+			<div class="nav-col left-col">
+				<a href="index.html"><div class="header-logo-div"><i class="fa fa-headphones" id="header-logo" aria-hidden="true"></i></div></a>
+				<a href="index.html"><div class="header-title">
+					<p>THALA's</p>
+					<p><b>Studio</b></p>
+				</div></a>
+				<ul><li><a href="#">Favourites</a></li></ul>
+			</div>
+			<div class="nav-col right-col">
+				<div class="search-box">
+					<i class="fa fa-search" aria-hidden="true"></i>
+					<input type="text" placeholder="Search" >
+					<a href="#"><i class="fa fa-microphone" aria-hidden="true"></i></a>
+				</div>
+				<a href="#"><i id="notif" class="fa fa-bell-o" aria-hidden="true"></i></a>
+				<img class="user-img" src="src/user.jpeg">
+			</div>
+		</header>
+
+		<!-- MAIN BODY -->
+		<div class="container container-flex">
+			<main>
+				<audio id="audio-player" src="" preload="auto"></audio>
+				<div class="featured-playlist flex-space">
+					<div class="featured-playlist-image"><img src="src/taylorswift.jpeg"></div>
+					<div class="featured-playlist-details">
+						<div class="featured-playlist-info">
+							<div class="flex-space featured-playlist-info-top">
+								<div class="featured-playlist-info-name">
+									<h2>TAYLOR SWIFT</h2>
+									<p>Indian Singer  </p>
+								</div>
+								<div class="followers"><p class="followers">91.8l followers</p></div>
+							</div>
+						</div>
+						<div class="featured-playlist-writeup">
+							<p>
+								Taylor Alison Swift (born December 13, 1989) is an American singer-songwriter. Known for her biographical songwriting, artistic reinventions, and cultural impact, Swift is a leading figure in popular music and the subject of widespread public interest.
+							</p><br>
+							<a href="">Follow</a>
+						</div>
+						<div class="featured-playlist-buttons">
+							<div class="play-all-button">
+								<button id="play-all">Play All</button>
+								<p>220 tracks | 190 followers</p>
+							</div>
+							<div class="player-controls">
+								<button id="prev-track"><i class="fa fa-step-backward" aria-hidden="true"></i></button>
+								<button id="play-pause"><i class="fa fa-play" aria-hidden="true"></i></button>
+								<button id="next-track"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
+								<input type="range" id="volume-control" min="0" max="1" step="0.1" value="0.5">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="playlist-next-item flex-space">
+					<div class="playlist-next-item-entry flex-space">
+						<div class="playlist-next-item-entry-info flex-space">
+							<p class="playlist-next-item-entry-number">01</p>
+							<div class="playlist-next-item-entry-info-image"><img src="src/note.jpeg"></div>
+							<div class="playlist-next-item-entry-info-name">
+								<p><b>Cruel Summer</b></p>
+								<p class="playlist-next-item-entry-info-name-sub">Taylor Swift</p>
+							</div>
+						</div>
+						<div class="playlist-next-item-entry-icons flex-space">
+							<a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+							<button class="play-button" data-audio="src/Cruel Summer.mp3"><i class="fa fa-play" aria-hidden="true"></i></button>
+							<a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<div class="playlist-next-item-entry flex-space">
+						<div class="playlist-next-item-entry-info flex-space">
+							<p class="playlist-next-item-entry-number">02</p>
+							<div class="playlist-next-item-entry-info-image"><img src="src/note2.jpeg"></div>
+							<div class="playlist-next-item-entry-info-name">
+								<p><b>August </b></p>
+								<p class="playlist-next-item-entry-info-name-sub">Taylor Swift</p>
+							</div>
+						</div>
+						<div class="playlist-next-item-entry-icons flex-space">
+							<a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+							<button class="play-button" data-audio="src/August.mp3"><i class="fa fa-play" aria-hidden="true"></i></button>
+							<a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<div class="playlist-next-item-entry flex-space">
+						<div class="playlist-next-item-entry-info flex-space">
+							<p class="playlist-next-item-entry-number">03</p>
+							<div class="playlist-next-item-entry-info-image"><img src="src/note5.jpg"></div>
+							<div class="playlist-next-item-entry-info-name">
+								<p><b>Enchanted</b></p>
+								<p class="playlist-next-item-entry-info-name-sub">Taylor Swift</p>
+							</div>
+						</div>
+						<div class="playlist-next-item-entry-icons flex-space">
+							<a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+							<button class="play-button" data-audio="src/Enchanted.mp3"><i class="fa fa-play" aria-hidden="true"></i></button>
+							<a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<div class="playlist-next-item-entry flex-space">
+						<div class="playlist-next-item-entry-info flex-space">
+							<p class="playlist-next-item-entry-number">01</p>
+							<div class="playlist-next-item-entry-info-image"><img src="src/note.jpeg"></div>
+							<div class="playlist-next-item-entry-info-name">
+								<p><b>Love story</b></p>
+								<p class="playlist-next-item-entry-info-name-sub">Taylor Swift</p>
+							</div>
+						</div>
+						<div class="playlist-next-item-entry-icons flex-space">
+							<a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+							<button class="play-button" data-audio="src/Cruel Summer.mp3"><i class="fa fa-play" aria-hidden="true"></i></button>
+							<a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<div class="playlist-next-item-entry flex-space">
+						<div class="playlist-next-item-entry-info flex-space">
+							<p class="playlist-next-item-entry-number">02</p>
+							<div class="playlist-next-item-entry-info-image"><img src="src/note2.jpeg"></div>
+							<div class="playlist-next-item-entry-info-name">
+								<p><b>Blank space </b></p>
+								<p class="playlist-next-item-entry-info-name-sub">Taylor Swift</p>
+							</div>
+						</div>
+						<div class="playlist-next-item-entry-icons flex-space">
+							<a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+							<button class="play-button" data-audio="src/August.mp3"><i class="fa fa-play" aria-hidden="true"></i></button>
+							<a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<div class="playlist-next-item-entry flex-space">
+						<div class="playlist-next-item-entry-info flex-space">
+							<p class="playlist-next-item-entry-number">03</p>
+							<div class="playlist-next-item-entry-info-image"><img src="src/note5.jpg"></div>
+							<div class="playlist-next-item-entry-info-name">
+								<p><b>22</b></p>
+								<p class="playlist-next-item-entry-info-name-sub">Taylor Swift</p>
+							</div>
+						</div>
+						<div class="playlist-next-item-entry-icons flex-space">
+							<a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+							<button class="play-button" data-audio="src/Enchanted.mp3"><i class="fa fa-play" aria-hidden="true"></i></button>
+							<a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>
+			</main>
+		
+		</div>
+		<script>
+			const audioPlayer = document.getElementById('audio-player');
+			const playButtons = document.querySelectorAll('.play-button');
+			const searchInput = document.getElementById('search-input');
+			const playPauseButton = document.getElementById('play-pause');
+			const volumeControl = document.getElementById('volume-control');
+			const prevTrackButton = document.getElementById('prev-track');
+			const nextTrackButton = document.getElementById('next-track');
+			const audioSources = [
+				'src/Cruel Summer.mp3',
+				'src/August.mp3',
+				'src/Enchanted.mp3',
+				'src/LoveStory.mp3',
+				'src/BlankSpace.mp3',
+				'src/22.mp3'
+			];
+			let currentTrackIndex = 0;
+	
+			// Function to play a specific track by index
+			function playTrack(index) {
+				audioPlayer.src = audioSources[index];
+				audioPlayer.play();
+				updatePlayButton(index);
+			}
+	
+			// Update play button icon based on the current track
+			function updatePlayButton(index) {
+				playButtons.forEach((button, i) => {
+					button.innerHTML = i === index && !audioPlayer.paused
+						? '<i class="fa fa-pause" aria-hidden="true"></i>'
+						: '<i class="fa fa-play" aria-hidden="true"></i>';
+				});
+			}
+			function updatePlayPauseIcon() {
+				playPauseButton.innerHTML = audioPlayer.paused
+					? '<i class="fa fa-play" aria-hidden="true"></i>'
+					: '<i class="fa fa-pause" aria-hidden="true"></i>';
+			}
+			playPauseButton.addEventListener('click', () => {
+					if (audioPlayer.paused) {
+						audioPlayer.play();
+					} else {
+						audioPlayer.pause();
+					}
+					updatePlayPauseIcon();
+				});
+	
+			// Add click events to individual play buttons
+			playButtons.forEach((button, index) => {
+				button.addEventListener('click', () => {
+					if (audioPlayer.src.endsWith(audioSources[index])) {
+						if (audioPlayer.paused) {
+							audioPlayer.play();
+						} else {
+							audioPlayer.pause();
+						}
+					} else {
+						playTrack(index);
+					}
+					updatePlayButton(index);
+				});
+			});
+	
+			// Next Track Control
+			nextTrackButton.addEventListener('click', () => {
+				currentTrackIndex = (currentTrackIndex + 1) % audioSources.length;
+				playTrack(currentTrackIndex);
+			});
+	
+			// Previous Track Control
+			prevTrackButton.addEventListener('click', () => {
+				currentTrackIndex = (currentTrackIndex - 1 + audioSources.length) % audioSources.length;
+				playTrack(currentTrackIndex);
+			});
+	
+			// Volume Control
+			volumeControl.addEventListener('input', () => {
+				audioPlayer.volume = volumeControl.value;
+			});
+	
+			// "Play All" button event
+			document.getElementById('play-all').addEventListener('click', () => {
+				currentTrackIndex = 0;
+				playTrack(currentTrackIndex);
+	
+				audioPlayer.onended = () => {
+					currentTrackIndex++;
+					if (currentTrackIndex < audioSources.length) {
+						playTrack(currentTrackIndex);
+					} else {
+						currentTrackIndex = 0; // Reset index if all tracks are done
+						updatePlayButton(-1); // Reset button icons
+					}
+				};
+			});
+	
+			// Search functionality
+			searchInput.addEventListener('input', () => {
+				const query = searchInput.value.toLowerCase();
+				const songEntries = document.querySelectorAll('.playlist-next-item-entry');
+	
+				songEntries.forEach(entry => {
+					const songName = entry.querySelector('.playlist-next-item-entry-info-name b').innerText.toLowerCase();
+					entry.style.display = songName.includes(query) ? 'flex' : 'none';
+				});
+			});
+	
+		</script>
+	</body>
+</html>
