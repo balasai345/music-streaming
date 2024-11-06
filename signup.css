@@ -17,7 +17,44 @@
 body{
     background: #121212;
 }
+header{
+	display: flex;
+	justify-content: flex-start;
+	width:90%;
+	margin: 2em auto;
+}
+.left-col{
+	width: 50%;
+}
+a{
+	text-decoration: none;
+	color:#ffffff;
+}
 
+a:hover{
+	color:#6872f0;
+}
+
+.left-col, .right-col{
+	width: 50%;
+}
+
+#header-logo{
+	font-size: 3rem;
+	margin-right: 0.3em; 
+}
+
+.header-title{
+	font-size: 1.5rem;
+	margin-right: 5rem;
+}
+.header-title p{
+	margin:0;
+}
+.nav-col{
+	display: flex;
+	align-items: center;
+}
 .container{
     width: 380px;
     padding: 0px 28px;
