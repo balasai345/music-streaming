@@ -142,8 +142,8 @@ a:hover{
 /*Featured*/
 
 .container{
-	width:90%;
-	max-width:900px;
+	width:100%;
+	max-width:1050px;
 	margin: 0 auto;
 }
 
@@ -157,11 +157,12 @@ a:hover{
 }
 
 main{
-	width:75%;
+	width:152%;
 }
 
 aside{
-	width:20%;
+	width:60%;
+	transform: translateX(60%);
 }
 
 .article-image{
@@ -204,17 +205,21 @@ aside{
 /*Popular Artists*/
 .popular-artist-entry{
 	width:20%;
+	margin-right: 20px;
 }
 .popular-artist-entry img{
 	border-radius: 50%;
 	
 }
-
+.popular-artist-entry :hover{
+	scale: 1.3;
+}
 .popular-artist-entry p{
 	margin-top:0.4em;
 	margin-bottom: 0;
 	text-align: center;
 	font-size: 0.73rem;
+	scale: 1.2;
 }
 
 /*Stations*/
@@ -228,7 +233,9 @@ aside{
 	position: relative;
 	width: 13.5%;
 }
-
+.stations-entry :hover{
+	scale: 1.1;
+}
 .stations-entry img{
 	border-radius: 50%;
 }
@@ -249,7 +256,9 @@ aside{
 .article-image{
 	position: relative;
 }
-
+.article-image :hover{
+	scale: 1.1;
+}
 .middle-featured{
 	margin-top:2em;
 }
