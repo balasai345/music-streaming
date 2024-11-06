@@ -3,42 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Spotify</title>
+    <title>Login</title>
     <link rel="shortcut icon" href="src/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./login.css">
 </head>
 <body>
-    <div class="container">
-        <div class="logo"><img src="src/favicon.png" alt=""></div>
-
-        <h1>Log in to Thala</h1>
-
-        <form action="">
-            <button class="icon-btn"><img src="src/google.png" alt="">Sign up with Google</button>
-            <button class="icon-btn"><img src="src/facebook.png" alt="">Sign up with Facebook</button>
-            <button class="icon-btn"><img src="src/apple.png" alt="">Sign up with Apple</button>
-            <button class="icon-btn">Continue with phone number</button>
-
-            <div class="line"></div>
-
-            <label for="">Email or username</label><br>
-            <input type="text" placeholder="Email or username"><br>
-            <label for="">Password</label><br>
-            <input type="text" placeholder="Password"><br>
-            <button class="next">Next</button>.
-            
-            <div class="forget"><a href="">Forget your password?</a></div>
-
-            <div class="account">Don't have an account? &nbsp; <a href="./signup.html">Sign up for spotify</a></div>
-
-
-        </form>
-
-        <p class="term">This site protected by reCAPTCHA and the google <br> <a href="" class="privacy">Privacy Policy</a>
-        and <a href="" class="privacy">Term of Service </a> apply.
-        </p>
-
-
+    <header>
+        <div class="nav-col left-col">
+        <a href="index.html"><div class="header-logo-div"><i class="fa fa-headphones" id="header-logo" aria-hidden="true"></i></div></a>
+        <a href="index.html"><div class="header-title">
+            <p>THALA's</p>
+            <p><b>Studio</b></p>
+        </div></a>
     </div>
-</body>
+    </header>
+        <div class="container">
+            <div class="logo"><img src="src/favicon.png" alt=""></div>
+            <h1>Log in to Thala</h1>
+            <form id="loginForm">
+                <button class="icon-btn"><img src="src/google.png" alt="">Sign up with Google</button>
+                <button class="icon-btn"><img src="src/facebook.png" alt="">Sign up with Facebook</button>
+                <button class="icon-btn"><img src="src/apple.png" alt="">Sign up with Apple</button>
+                <button class="icon-btn"><img src="src/phone.png" alt="">Continue with phone number</button>
+                <div style="width: 100%;height: 0.3px;margin: 32px 0px;text-align: center;background: #cccccc;opacity: 0.5;"></div>
+                <label for="username">Email or username</label><br>
+                <input type="text" id="username" placeholder="Email or username"><br>
+                <label for="password">Password</label><br>
+                <input type="password" id="password" placeholder="Password"><br>
+                <button class="next">Next</button>
+                <div class="forget"><a href="">Forget your password?</a></div>
+                <div class="account">Don't have an account? &nbsp; <a href="./signup.html">Sign up for Thala</a></div>
+            </form>
+        </div>
+        <script>
+            document.querySelector('.next').addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent form submission
+                let username = document.getElementById('username').value;
+                let password = document.getElementById('password').value;
+    
+                let symbolPattern = /[!@#$%^&*(),.?":{}|<>]/; 
+                let passwordPattern = /.{8,}/; 
+                if (username === "") {
+                    alert("Please enter your email or username.");
+                    return;
+                }
+                if (!symbolPattern.test(username)) 
+                {
+                    alert("Username must contain at least one symbol (e.g., !, @, #),-,_");
+                    return;
+                }
+                if (password === "") 
+                {
+                    alert("Please enter your password.");
+                    return;
+                }
+                if (!passwordPattern.test(password)) 
+                {
+                    alert("Password must be at least 8 characters long.");
+                    return;
+                }
+                alert("Login Successful!"); 
+                window.location.href = "index.html";
+            });
+        </script>
+    </body>
 </html>
