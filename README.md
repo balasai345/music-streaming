@@ -22,6 +22,7 @@ This frontEnd project was made only using HTML and CSS. It has been made fully r
 
 - HTML
 - CSS
+- JAVA SCRIPT
 
 [Back To The Top](#read-me-template)
 
@@ -30,5 +31,7 @@ This frontEnd project was made only using HTML and CSS. It has been made fully r
 ## Author Info
 
 - LinkedIn - [@balasaiteja]https://in.linkedin.com/in/bala-sai-teja-jaddu-a6775028a
+- LinkedIn - [@Anaparthi lokesh]www.linkedin.com/in/anaparthilokesh
+
 
 [Back To The Top](#read-me-template)
